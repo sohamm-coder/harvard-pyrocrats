@@ -1,0 +1,27 @@
+.seizure-control-container {
+    padding: 20px;
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+  }
+  
+  button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .game-text, .breathing-text {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+  }
+  
