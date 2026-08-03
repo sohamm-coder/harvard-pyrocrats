@@ -1,70 +1,227 @@
-# Getting Started with Create React App
+# Rare Disease Healthcare Platform
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A web-based healthcare platform developed during the Harvard Rare Disease Hackathon to support individuals living with rare diseases. The application provides a centralized ecosystem for disease information, community engagement, health tracking, expert consultation, crowdfunding, and educational resources.
 
-## Available Scripts
+The platform is designed to improve accessibility to healthcare information while fostering collaboration between patients, caregivers, healthcare professionals, and support communities.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+# Features
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- Patient Dashboard
+- Disease Diagnosis Support
+- Sleep Tracking
+- Community Discussion Forum
+- Expert Consultation
+- Educational Resources
+- Crowdfunding Support
+- Multilingual Support
+- Interactive Health Analytics
+- Secure User Authentication
+- Responsive User Interface
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# System Architecture
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+                    User
+                      │
+                      ▼
+                React Frontend
+                      │
+         ┌────────────┼────────────┐
+         ▼            ▼            ▼
+ Authentication   Healthcare    Community
+   (Firebase)      Modules        Services
+         │            │              │
+         └────────────┼──────────────┘
+                      │
+                Firebase Backend
+                      │
+              Real-time Database
+```
 
-### `npm run build`
+---
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+# Technology Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Frontend
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- React.js
+- JavaScript
+- HTML5
+- CSS3
 
-### `npm run eject`
+## Backend Services
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- Firebase Authentication
+- Firebase Firestore
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Visualization
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Chart.js
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Development Tools
 
-## Learn More
+- Git
+- GitHub
+- npm
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+# Project Modules
 
-### Code Splitting
+## Patient Dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Provides users with a centralized dashboard to access healthcare information, monitor activities, and navigate platform services.
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Diagnosis Support
 
-### Making a Progressive Web App
+Allows users to explore disease-related information and access healthcare guidance.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+---
 
-### Advanced Configuration
+## Sleep Tracker
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Enables users to record and monitor sleep-related health information.
 
-### Deployment
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## Community Forum
 
-### `npm run build` fails to minify
+Provides a collaborative environment where patients and caregivers can discuss experiences, ask questions, and share knowledge.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
+
+## Expert Connect
+
+Allows users to connect with healthcare professionals for consultation and guidance.
+
+---
+
+## Education Hub
+
+Offers educational content and healthcare resources related to rare diseases.
+
+---
+
+## Crowdfunding
+
+Supports fundraising initiatives for medical treatments and community assistance.
+
+---
+
+## Multilingual Support
+
+Improves accessibility by supporting multiple languages for diverse user communities.
+
+---
+
+# Folder Structure
+
+```
+src/
+
+├── components/
+│
+├── pages/
+│   ├── Dashboard
+│   ├── Diagnosis
+│   ├── SleepTracker
+│   ├── Community
+│   ├── ExpertConnect
+│   ├── Education
+│   ├── Crowdfunding
+│
+├── firebase/
+│
+├── assets/
+│
+├── App.js
+└── index.js
+```
+
+---
+
+# Key Functionalities
+
+### Authentication
+
+- Secure user authentication using Firebase.
+
+### Healthcare Services
+
+- Disease information
+- Patient support
+- Expert consultation
+
+### Analytics
+
+- Interactive charts for health visualization.
+
+### Community
+
+- Forums and collaborative discussion platform.
+
+---
+
+# Future Enhancements
+
+- AI-powered disease recommendation system
+- Medication reminder system
+- Nutrition and calorie tracking
+- Wearable device integration
+- Appointment scheduling
+- Telemedicine support
+- Electronic Health Record (EHR) integration
+- Personalized health recommendations
+
+---
+
+# Getting Started
+
+## Clone Repository
+
+```bash
+git clone https://github.com/sohamm-coder/harvard-pyrocrats.git
+```
+
+## Install Dependencies
+
+```bash
+npm install
+```
+
+## Run the Application
+
+```bash
+npm start
+```
+
+The application will start at:
+
+```
+http://localhost:3000
+```
+
+---
+
+# Contributors
+
+Developed during the **Harvard Rare Disease Hackathon** by Team Pyrocrats.
+
+---
+
+# Author
+
+**Soham Mahajan**
+
+MS Computer Science  
+University of Massachusetts Dartmouth
+
+GitHub: https://github.com/sohamm-coder
+
+LinkedIn: https://www.linkedin.com/in/sohammahajan
